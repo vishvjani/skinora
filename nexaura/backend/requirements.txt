@@ -1,0 +1,39 @@
+# ── Web framework ─────────────────────────────────────────────────────────────
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+
+# ── Database ──────────────────────────────────────────────────────────────────
+sqlalchemy==2.0.30
+asyncpg==0.29.0
+alembic==1.13.1
+psycopg2-binary==2.9.9    # used by init_db.py and fix_schema.py migration scripts
+
+# ── Validation ────────────────────────────────────────────────────────────────
+pydantic==2.7.1
+pydantic-settings==2.2.1
+email-validator==2.1.1
+
+# ── Auth (Clerk JWT verification) ─────────────────────────────────────────────
+python-jose[cryptography]==3.3.0
+httpx==0.27.0
+
+# ── Cache (Valkey / Redis) ────────────────────────────────────────────────────
+redis==5.0.4
+
+# ── ML — Embeddings + Vector DB ───────────────────────────────────────────────
+sentence-transformers==2.7.0
+chromadb==0.5.0
+torch==2.3.0          # pulled by sentence-transformers; CPU version is fine
+transformers==4.41.0
+
+# ── ML — Pricing model ────────────────────────────────────────────────────────
+xgboost==2.0.3
+scikit-learn==1.4.2
+numpy==1.26.4
+joblib==1.4.2
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv==1.0.1
+orjson==3.10.3        # fast JSON serialisation used by FastAPI
+tenacity==8.3.0       # retry logic

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5F7" />
+      <stop offset="100%" stop-color="#FCE4EC" />
+    </linearGradient>
+    <linearGradient id="tubeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE0B2" />
+      <stop offset="50%" stop-color="#FFB74D" />
+      <stop offset="100%" stop-color="#F57C00" />
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#E65100" flood-opacity="0.2" />
+    </filter>
+  </defs>
+  <rect width="600" height="600" fill="url(#bgGrad)" />
+  <circle cx="300" cy="300" r="220" fill="#FFFFFF" opacity="0.7" />
+  
+  <!-- Base Shadow -->
+  <ellipse cx="300" cy="480" rx="90" ry="18" fill="#E65100" opacity="0.15" />
+  
+  <!-- Face Wash Squeeze Tube Body -->
+  <path d="M 230 180 L 370 180 C 385 180 395 240 380 380 C 370 440 350 450 300 450 C 250 450 230 440 220 380 C 205 240 215 180 230 180 Z" fill="url(#tubeGrad)" filter="url(#dropShadow)" />
+  
+  <!-- Tube Top Crimped Edge -->
+  <rect x="220" y="160" width="160" height="25" fill="#E65100" rx="5" />
+  
+  <!-- Tube Cap -->
+  <rect x="250" y="445" width="100" height="35" rx="8" fill="#FFFFFF" stroke="#F57C00" stroke-width="3" />
+
+  <!-- Tube Branding Label -->
+  <rect x="240" y="240" width="120" height="140" rx="12" fill="#FFFFFF" opacity="0.9" />
+  <text x="300" y="275" font-family="'Playfair Display', Georgia, serif" font-size="18" font-weight="bold" fill="#E65100" text-anchor="middle" letter-spacing="2">SKINORA</text>
+  <text x="300" y="298" font-family="'Poppins', sans-serif" font-size="10" font-weight="700" fill="#F57C00" text-anchor="middle">VITAMIN C GLOW</text>
+  <text x="300" y="315" font-family="'Poppins', sans-serif" font-size="9" fill="#BF360C" text-anchor="middle">BRIGHTENING FACE WASH</text>
+  <text x="300" y="345" font-family="'Poppins', sans-serif" font-size="10" font-weight="600" fill="#E65100" text-anchor="middle">150 ml</text>
+  
+  <!-- Orange Splashes -->
+  <circle cx="160" cy="220" r="12" fill="#FFA726" opacity="0.8" />
+  <circle cx="440" cy="350" r="16" fill="#FFA726" opacity="0.8" />
+</svg>

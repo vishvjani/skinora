@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgSerum" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0F5" />
+      <stop offset="100%" stop-color="#FCE4EC" />
+    </linearGradient>
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="50%" stop-color="#FFB74D" />
+      <stop offset="100%" stop-color="#E91E63" />
+    </linearGradient>
+    <filter id="shadowSerum" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="15" stdDeviation="15" flood-color="#E91E63" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  <rect width="600" height="600" fill="url(#bgSerum)" />
+  <circle cx="300" cy="300" r="210" fill="#FFFFFF" opacity="0.8" />
+  
+  <ellipse cx="300" cy="470" rx="120" ry="25" fill="#E91E63" opacity="0.15" />
+  
+  <!-- Bottle Base -->
+  <rect x="210" y="230" width="180" height="220" rx="30" fill="url(#glassGrad)" filter="url(#shadowSerum)" />
+  <rect x="230" y="260" width="140" height="160" rx="15" fill="#FFFFFF" opacity="0.9" />
+  
+  <!-- Label Text -->
+  <text x="300" y="305" font-family="'Playfair Display', Georgia, serif" font-size="20" font-weight="bold" fill="#2C1A1D" text-anchor="middle">SKINORA</text>
+  <text x="300" y="330" font-family="'Poppins', sans-serif" font-size="12" font-weight="700" fill="#E91E63" text-anchor="middle" letter-spacing="2">KUMKUMADI</text>
+  <text x="300" y="350" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#2C1A1D" text-anchor="middle">FACE SERUM</text>
+  <text x="300" y="380" font-family="'Poppins', sans-serif" font-size="10" fill="#E91E63" text-anchor="middle">30 ML • 100% ORGANIC</text>
+  
+  <!-- Dropper Neck & Pipette Top -->
+  <rect x="250" y="180" width="100" height="50" fill="#2C1A1D" rx="8" />
+  <rect x="265" y="140" width="70" height="40" fill="#E91E63" rx="15" />
+  
+  <!-- Golden Liquid Drop -->
+  <path d="M 300 80 Q 320 110 300 125 Q 280 110 300 80 Z" fill="#FFE082" />
+</svg>

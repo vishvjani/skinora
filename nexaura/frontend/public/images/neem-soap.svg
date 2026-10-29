@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5F7" />
+      <stop offset="100%" stop-color="#FCE4EC" />
+    </linearGradient>
+    <linearGradient id="soapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A5D6A7" />
+      <stop offset="50%" stop-color="#66BB6A" />
+      <stop offset="100%" stop-color="#388E3C" />
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#2E7D32" flood-opacity="0.2" />
+    </filter>
+  </defs>
+  <rect width="600" height="600" fill="url(#bgGrad)" />
+  <circle cx="300" cy="300" r="220" fill="#FFFFFF" opacity="0.7" />
+  
+  <!-- Base Shadow -->
+  <ellipse cx="300" cy="420" rx="160" ry="35" fill="#2E7D32" opacity="0.15" />
+  
+  <!-- Neem Soap Bar -->
+  <rect x="160" y="200" width="280" height="190" rx="35" fill="url(#soapGrad)" filter="url(#dropShadow)" />
+  <rect x="180" y="220" width="240" height="150" rx="25" fill="#E8F5E9" opacity="0.25" />
+  
+  <!-- Gold Inner Border -->
+  <rect x="200" y="240" width="200" height="110" rx="18" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="8,6" opacity="0.8" />
+  
+  <text x="300" y="285" font-family="'Playfair Display', Georgia, serif" font-size="28" font-weight="bold" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">SKINORA</text>
+  <text x="300" y="315" font-family="'Poppins', sans-serif" font-size="14" font-weight="600" fill="#FFF" text-anchor="middle" letter-spacing="3">ROSEMARY &amp; NEEM</text>
+  <text x="300" y="335" font-family="'Poppins', sans-serif" font-size="11" fill="#E8F5E9" text-anchor="middle">ANTI-ACNE CLARIFYING</text>
+  
+  <!-- Leaf Details -->
+  <path d="M 150 170 Q 180 130 230 150 Q 180 190 150 170 Z" fill="#4CAF50" opacity="0.9" />
+  <path d="M 450 370 Q 420 410 370 390 Q 420 350 450 370 Z" fill="#4CAF50" opacity="0.9" />
+</svg>

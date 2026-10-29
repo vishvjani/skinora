@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5F7" />
+      <stop offset="100%" stop-color="#FCE4EC" />
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8BBD0" />
+      <stop offset="50%" stop-color="#E91E63" />
+      <stop offset="100%" stop-color="#C2185B" />
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#C2185B" flood-opacity="0.2" />
+    </filter>
+  </defs>
+  <rect width="600" height="600" fill="url(#bgGrad)" />
+  <circle cx="300" cy="300" r="220" fill="#FFFFFF" opacity="0.7" />
+  
+  <!-- Shadow Base -->
+  <ellipse cx="300" cy="450" rx="180" ry="30" fill="#C2185B" opacity="0.15" />
+  
+  <!-- Gift Box Base -->
+  <rect x="140" y="220" width="320" height="200" rx="25" fill="url(#boxGrad)" filter="url(#dropShadow)" />
+  
+  <!-- Gold Ribbon Vertical & Horizontal -->
+  <rect x="280" y="220" width="40" height="200" fill="#FFE082" opacity="0.9" />
+  <rect x="140" y="300" width="320" height="40" fill="#FFE082" opacity="0.9" />
+  
+  <!-- Ribbon Bow -->
+  <path d="M 270 200 C 230 160 250 140 300 190 C 350 140 370 160 330 200 Z" fill="#FFD54F" stroke="#FFF" stroke-width="2" />
+  <circle cx="300" cy="195" r="14" fill="#FFA000" />
+  
+  <!-- Branding Label -->
+  <rect x="180" y="250" width="240" height="140" rx="15" fill="#FFFFFF" />
+  <text x="300" y="290" font-family="'Playfair Display', Georgia, serif" font-size="24" font-weight="bold" fill="#C2185B" text-anchor="middle" letter-spacing="2">SKINORA</text>
+  <text x="300" y="315" font-family="'Poppins', sans-serif" font-size="12" font-weight="700" fill="#E91E63" text-anchor="middle" letter-spacing="2">ULTIMATE DE-TAN GLOW</text>
+  <text x="300" y="338" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#880E4F" text-anchor="middle">3-PIECE LUXURY GIFT SET</text>
+  <text x="300" y="360" font-family="'Poppins', sans-serif" font-size="10" font-weight="700" fill="#D81B60" text-anchor="middle">SAVE 33% OFF</text>
+</svg>

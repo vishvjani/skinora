@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #F7F3ED;
+    --ink: #241F1A;
+    --brand: #3F4A3D;
+    --gold: #B08D57;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: #F7F3ED;
+    color: #241F1A;
+    overflow-x: hidden;
+    font-feature-settings: "ss01", "cv01";
+  }
+
+  /* Editorial display headings */
+  h1, h2, h3 {
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background: #E4DACB;
+    color: #241F1A;
+  }
+}
+
+/* Refined warm scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #EDE6DB;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9BBA4;
+  border-radius: 10px;
+  border: 2px solid #EDE6DB;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9B8B7A;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@layer components {
+  /* Thin uppercase eyebrow label used across sections */
+  .eyebrow {
+    @apply text-[11px] uppercase font-semibold tracking-[0.24em] text-[#9B8B7A];
+  }
+
+  /* Refined primary luxury button */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-[#241F1A] px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-[#F7F3ED] transition-all duration-300 hover:bg-[#3F4A3D] hover:shadow-card active:scale-[0.98] border border-[#241F1A]/80 hover:border-[#3F4A3D];
+  }
+
+  /* Outlined / ghost luxury button */
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-[#E4DACB] bg-transparent px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-[#241F1A] transition-all duration-300 hover:border-[#241F1A] hover:bg-[#241F1A] hover:text-[#F7F3ED] active:scale-[0.98];
+  }
+
+  /* Saffron Gold accent button */
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-[#B08D57] px-7 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-[#F7F3ED] transition-all duration-300 hover:bg-[#977341] hover:shadow-card active:scale-[0.98];
+  }
+
+  /* Faint hairline divider */
+  .hairline {
+    @apply h-px w-full bg-[#E4DACB];
+  }
+
+  .hairline-gold {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-[#B08D57]/40 to-transparent;
+  }
+
+  /* Glassy floating surface */
+  .glass {
+    background: rgba(247, 243, 237, 0.78);
+    backdrop-filter: blur(16px) saturate(1.2);
+    -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  }
+
+  .glass-atelier {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(20px) saturate(1.3);
+    -webkit-backdrop-filter: blur(20px) saturate(1.3);
+    border: 1px solid rgba(228, 218, 203, 0.85);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Subtle grain-free premium card surface with micro-depth */
+  .surface-card {
+    background: #FFFFFF;
+    border: 1px solid rgba(228, 218, 203, 0.95);
+    box-shadow: 0 4px 20px -6px rgba(36, 31, 26, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  }
+
+  /* Gold foil gradient text */
+  .text-gold-foil {
+    background: linear-gradient(135deg, #8A6836 0%, #B08D57 45%, #D4AF37 75%, #977341 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Saffron ambient glow */
+  .luxury-glow {
+    box-shadow: 0 0 35px -8px rgba(176, 141, 87, 0.35);
+  }
+
+  /* Luxury badge pill */
+  .badge-luxury {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.65rem;
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    border-radius: 9999px;
+  }
+
+  /* Animated gradient sheen for premium highlights */
+  .sheen {
+    background: linear-gradient(110deg, transparent 25%, rgba(255,255,255,0.5) 50%, transparent 75%);
+    background-size: 200% 100%;
+  }
+
+  .animate-delay-1 { animation-delay: 0.08s; }
+  .animate-delay-2 { animation-delay: 0.16s; }
+  .animate-delay-3 { animation-delay: 0.24s; }
+  .animate-delay-4 { animation-delay: 0.32s; }
+
+  /* Paused marquee until hover */
+  .marquee-track {
+    display: inline-flex;
+    white-space: nowrap;
+    will-change: transform;
+  }
+}

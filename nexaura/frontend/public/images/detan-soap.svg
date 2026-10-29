@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5F7" />
+      <stop offset="100%" stop-color="#FCE4EC" />
+    </linearGradient>
+    <linearGradient id="soapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8BBD0" />
+      <stop offset="50%" stop-color="#E91E63" />
+      <stop offset="100%" stop-color="#C2185B" />
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#C2185B" flood-opacity="0.2" />
+    </filter>
+  </defs>
+  <rect width="600" height="600" fill="url(#bgGrad)" />
+  <circle cx="300" cy="300" r="220" fill="#FFFFFF" opacity="0.7" />
+  
+  <!-- Soap Shadow & Base -->
+  <ellipse cx="300" cy="420" rx="160" ry="35" fill="#C2185B" opacity="0.15" />
+  
+  <!-- Handmade Soap Bar -->
+  <rect x="160" y="200" width="280" height="190" rx="35" fill="url(#soapGrad)" filter="url(#dropShadow)" />
+  <rect x="180" y="220" width="240" height="150" rx="25" fill="#F8BBD0" opacity="0.3" />
+  
+  <!-- Gold Stamp Texture -->
+  <rect x="200" y="240" width="200" height="110" rx="18" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="8,6" opacity="0.8" />
+  
+  <text x="300" y="285" font-family="'Playfair Display', Georgia, serif" font-size="28" font-weight="bold" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">SKINORA</text>
+  <text x="300" y="315" font-family="'Poppins', sans-serif" font-size="14" font-weight="600" fill="#FFF" text-anchor="middle" letter-spacing="3">MAGIC DE-TAN</text>
+  <text x="300" y="335" font-family="'Poppins', sans-serif" font-size="11" fill="#FFE082" text-anchor="middle">SAFFRON &amp; GOAT MILK</text>
+  
+  <!-- Saffron Threads & Organic Leaves -->
+  <path d="M 140 180 Q 170 140 220 160 Q 170 200 140 180 Z" fill="#E91E63" opacity="0.8" />
+  <path d="M 460 360 Q 430 400 380 380 Q 430 340 460 360 Z" fill="#E91E63" opacity="0.8" />
+  <circle cx="210" cy="160" r="8" fill="#FFE082" />
+  <circle cx="410" cy="380" r="10" fill="#FFE082" />
+</svg>

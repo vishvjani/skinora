@@ -1,0 +1,27 @@
+# Environment
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+
+# ML artefacts (large files — store in cloud / DVC)
+data/chroma/
+data/models/*.json
+data/models/*.pkl
+data/models/*.bin
+
+# IDE
+.vscode/
+.idea/
+*.swp
